@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Data (don't commit competition data)
+data/
+*.csv
+!reports/*.csv
+
+# Model weights & large binaries
+models/*.pt
+models/*.bin
+*.h5
+
+# WandB
+wandb/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets — NEVER commit
+.env
+*.key
