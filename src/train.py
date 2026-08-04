@@ -180,7 +180,7 @@ def main():
                               scaler, train=True)
         print(f"Refit {epoch+1}/{best_epoch} | loss {loss:.4f} | acc {acc:.4f}")
 
-    # 6. Save final artifacts
+    # 6. Save final artifacts for refernce / inference
     final_path = os.path.join(args.out_dir, "bilstm_final.pt")
     torch.save({"state_dict": model.state_dict(),
                 "vocab_size": vocab_size, "pad_id": pad_id}, final_path)
