@@ -249,7 +249,7 @@ class BiLSTM_Classifier(nn.Module):
         h = self.dropout(pooled)
         h = F.relu(self.fc1(h))
         h = self.dropout(h)
-        return self.fc2(h).squeeze(-1)             # (batch,)
+        return self.fc2(h).squeeze(-1)           # (batch,) returns one score per example
 
     def forward(self, input_ids, attn_mask):
         """Run all 5 options and stack their scores -> (batch, 5) logits."""
