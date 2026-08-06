@@ -255,4 +255,4 @@ class BiLSTM_Classifier(nn.Module):
         """Run all 5 options and stack their scores -> (batch, 5) logits."""
         scores = [self.forward_one(input_ids[:, i], attn_mask[:, i])
                   for i in range(5)]
-        return torch.stack(scores, dim=1)          # softmax/argmax applied by caller
+        return torch.stack(scores, dim=1)          # softmax/argmax applied by caller has done
