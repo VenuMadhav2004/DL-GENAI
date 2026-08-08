@@ -96,7 +96,7 @@ Produces a validated Kaggle `submission.csv` (`ID`, `Prediction` = `"A B C"`).
   The model is then refit on 100% of the data for the best epoch count before test
   prediction; any post-refit training accuracy is memorisation, not an evaluation metric.
 - **Ranking loss** — each (prompt, option) pair gets one score; the 5 scores per question
-  go through softmax, and the top-3 letters form the prediction.
+  go through softmax, and the top-3 letters form the prediction and evaluation.
 
 ## Experiment tracking
 
