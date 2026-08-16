@@ -13,7 +13,7 @@ Usage:
     python src/train.py --data-dir ./data --out-dir ./models
 
 WandB is optional and off by default. Enable with --wandb (set WANDB_API_KEY
-as an env var — never hardcode it).
+as an env var — never hardcode it in a project).
 """
 
 import argparse
